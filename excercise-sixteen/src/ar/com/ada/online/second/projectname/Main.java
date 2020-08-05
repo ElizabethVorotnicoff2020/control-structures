@@ -20,6 +20,6 @@ public class Main {
         } else {
             bond = 3 * MINIMALSALARY;
         }
-        System.out.println("el monto del bono que recibira es: " + bond);
+        System.out.printf("el monto del bono que recibira es: $ %n " + bond);
     }
 }
