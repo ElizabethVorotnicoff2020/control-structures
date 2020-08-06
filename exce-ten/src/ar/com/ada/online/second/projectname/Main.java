@@ -23,13 +23,13 @@ public class Main {
         System.out.print("Ingrese la cantidad de dinero que tiene: ");
         money = keyboard.nextDouble();
 
-        if (money >= (km *1200 *2)){
+        if (money >= (km * 1200 * 2)) {
             System.out.println(holidayThree);
-        } else if (money >= (km * 800 *2)){
+        } else if (money >= (km * 800 * 2)) {
             System.out.println(holidayTwo);
-        } else if (money >= (km *750 *2)){
+        } else if (money >= (km * 750 * 2)) {
             System.out.println(holidayOne);
-        }else {
+        } else {
             System.out.println("Quedate en casa");
         }
     }

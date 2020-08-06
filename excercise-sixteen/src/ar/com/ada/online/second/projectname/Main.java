@@ -6,20 +6,24 @@ public class Main {
 
     public static void main(String[] args) {
         int scoring;
-        Double bond;
-        final double MINIMALSALARY = 16875;
+        double bond;
+        double minimalSalary;
 
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println("Ingrese la puntuacion: ");
+        System.out.println("Ingrese su puntuacion: ");
         scoring = keyboard.nextInt();
-        if (scoring <= 100){
-            bond = MINIMALSALARY;
-        }else if (scoring >100 && scoring <150) {
-            bond = 2 * MINIMALSALARY;
+
+        System.out.println("Ingrese el salario minimo: ");
+        minimalSalary = keyboard.nextDouble();
+
+        if (scoring <= 100) {
+            bond = minimalSalary;
+        } else if (scoring <= 150) {
+            bond = 2 * minimalSalary;
         } else {
-            bond = 3 * MINIMALSALARY;
+            bond = 3 * minimalSalary;
         }
-        System.out.printf("el monto del bono que recibira es: $ %n " + bond);
+        System.out.printf("El monto del bono que usted recibira es: $ %.0f", bond);
     }
 }
